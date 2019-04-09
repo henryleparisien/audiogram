@@ -145,8 +145,8 @@ function bricks(rainbow) {
         if (rainbow) {
           context.fillStyle = d3.interpolateWarm(1 - (b + 1) / maxBricks);
         }
-        console.log('JE PASSE',index, maxBricks);
-        if(index == maxBricks){
+        console.log('JE PASSE',index, d3.range(bricks).length);
+        if(index == d3.range(bricks).length-1){
           
           context.fillStyle = "#CC2828";
         }
