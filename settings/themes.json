@@ -37,5 +37,19 @@
     "waveBottom": 660,
     "waveTop": 320,
     "pattern": "bricks"
+  }, 
+   "Le parisien podcast": {
+    "width": 720,
+    "height": 720,
+    "backgroundImage": "cs.jpg",
+    "backgroundColor": "#FFFFFF",
+    "foregroundColor": "#00A0F0",
+    "captionAlign": "right",
+    "captionTop": 60,
+    "captionRight": 700,
+    "captionLeft": 340,
+    "waveBottom": 120,
+    "waveTop": 320,
+    "pattern": "bricks"
   }
 }

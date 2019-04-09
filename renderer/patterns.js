@@ -146,11 +146,11 @@ function bricks(rainbow) {
           context.fillStyle = d3.interpolateWarm(1 - (b + 1) / maxBricks);
         }
         /*console.log('JE PASSE',index, d3.range(bricks).length);*/
-        var h = options.waveBottom -76 ;
+       /* var h = options.waveBottom -76 ;
         for(j=0;j<h;j++){
           context.fillStyle = "#C8E6F5";
           context.fillRect(x, j, barWidth, brickHeight);
-        }
+        }*/
         context.fillStyle = options.waveColor;
         if(index == d3.range(bricks).length-1 && index !=0){
           context.fillStyle = "#CC2828";
