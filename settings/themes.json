@@ -24,6 +24,7 @@
     "backgroundImage": "lp.jpg",
     "waveBottom": 660,
     "waveTop": 320,
+    "waveColor": "#00A0F0",
     "pattern": "bricks"
   },
   "Le parisien fond blanc": {

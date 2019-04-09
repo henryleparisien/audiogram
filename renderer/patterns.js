@@ -133,7 +133,7 @@ function bricks(rainbow) {
 
     var barWidth = barX.bandwidth(),
         brickHeight = 10,
-        brickGap = 3,
+        brickGap = 0,
         maxBricks = Math.max(1, Math.floor(waveHeight / (brickHeight + brickGap)));
 
     data.forEach(function(val, i){
