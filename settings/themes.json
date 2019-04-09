@@ -27,10 +27,12 @@
   },
   "Le parisien fond blanc": {
     "backgroundColor": "#FFFFFF",
-    "foregroundColor": "#c7f464",
+    "foregroundColor": "#de1e3d",
     "captionAlign": "right",
     "captionTop": 60,
     "captionRight": 1220,
-    "captionLeft": 640
+    "captionLeft": 640,
+    "waveBottom": 660,
+    "waveTop": 320
   }
 }
