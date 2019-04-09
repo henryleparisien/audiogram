@@ -140,7 +140,7 @@ function bricks(rainbow) {
 
       var bricks = Math.max(1, Math.floor(height(val[0]) / (brickHeight + brickGap))),
           x = barX(i);
-      varindex = 0;
+      var index = 0;
       d3.range(bricks).forEach(function(b){
         if (rainbow) {
           context.fillStyle = d3.interpolateWarm(1 - (b + 1) / maxBricks);
