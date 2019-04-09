@@ -4,7 +4,7 @@
     "height": 720,
     "framesPerSecond": 24,
     "maxDuration": 3600,
-    "samplesPerFrame": 64,
+    "samplesPerFrame": 128,
     "pattern": "wave",
     "waveTop": 150,
     "waveBottom": 420,
