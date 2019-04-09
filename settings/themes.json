@@ -23,7 +23,8 @@
     "captionLeft": 640,
     "backgroundImage": "lp.jpg",
     "waveBottom": 660,
-    "waveTop": 320
+    "waveTop": 320,
+    "pattern": "bricks"
   },
   "Le parisien fond blanc": {
     "backgroundColor": "#FFFFFF",
