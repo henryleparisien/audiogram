@@ -146,7 +146,7 @@ function bricks(rainbow) {
           context.fillStyle = d3.interpolateWarm(1 - (b + 1) / maxBricks);
         }
         /*console.log('JE PASSE',index, d3.range(bricks).length);*/
-        if(index == d3.range(bricks).length-1){
+        if(index == d3.range(bricks).length-1 && index !=0){
           context.fillStyle = "#CC2828";
         }
           context.fillRect(x, options.waveBottom - (brickHeight * (b+1)) - brickGap * b, barWidth, brickHeight);
