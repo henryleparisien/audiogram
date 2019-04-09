@@ -46,15 +46,15 @@ function submitted() {
 
   if (!file) {
     d3.select("#row-audio").classed("error", true);
-    return setClass("error", "No audio file selected.");
+    return setClass("error", "Aucun fichier sélectionné.");
   }
 
   if (theme.maxDuration && selection.duration > theme.maxDuration) {
-    return setClass("error", "Your Audiogram must be under " + theme.maxDuration + " seconds.");
+    return setClass("error", "Votre Audiogram doit durer moins de " + theme.maxDuration + " secondes.");
   }
 
   if (!theme || !theme.width || !theme.height) {
-    return setClass("error", "No valid theme detected.");
+    return setClass("error", "Pas de Thème valide détecté.");
   }
 
   video.kill();
@@ -71,7 +71,7 @@ function submitted() {
   formData.append("caption", caption);
 
   setClass("loading");
-  d3.select("#loading-message").text("Uploading audio...");
+  d3.select("#loading-message").text("Upload du fichier audio...");
 
 	$.ajax({
 		url: "/submit/",
@@ -128,7 +128,7 @@ function error(msg) {
     msg = "Unknown error";
   }
 
-  d3.select("#loading-message").text("Loading...");
+  d3.select("#loading-message").text("Chargement...");
   setClass("error", msg);
 
 }
@@ -277,25 +277,25 @@ function statusMessage(result) {
     case "queued":
       return "Waiting for other jobs to finish, #" + (result.position + 1) + " in queue";
     case "audio-download":
-      return "Downloading audio for processing";
+      return "Téléchargement du fichier audio pour traitement";
     case "trim":
-      return "Trimming audio";
+      return "Réduction de l'audio";
     case "probing":
-      return "Probing audio file";
+      return "Analyse du fichier audio";
     case "waveform":
-      return "Analyzing waveform";
+      return "Analyse du spectre";
     case "renderer":
-      return "Initializing renderer";
+      return "Initialisation du renddu";
     case "frames":
-      var msg = "Generating frames";
+      var msg = "Génération de la vidéo";
       if (result.numFrames) {
-        msg += ", " + Math.round(100 * (result.framesComplete || 0) / result.numFrames) + "% complete";
+        msg += ", " + Math.round(100 * (result.framesComplete || 0) / result.numFrames) + "%";
       }
       return msg;
     case "combine":
-      return "Combining frames with audio";
+      return "Fusion du son et de l'image";
     case "ready":
-      return "Cleaning up";
+      return "Nettoyage";
     default:
       return JSON.stringify(result);
   }
