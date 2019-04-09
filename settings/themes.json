@@ -48,8 +48,8 @@
     "captionTop": 60,
     "captionRight": 700,
     "captionLeft": 340,
-    "waveBottom": 120,
-    "waveTop": 320,
+    "waveTop": 150,
+    "waveBottom": 420,
     "pattern": "bricks"
   }
 }
