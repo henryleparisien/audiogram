@@ -140,12 +140,16 @@ function bricks(rainbow) {
 
       var bricks = Math.max(1, Math.floor(height(val[0]) / (brickHeight + brickGap))),
           x = barX(i);
-
+      var index=1;
       d3.range(bricks).forEach(function(b){
         if (rainbow) {
           context.fillStyle = d3.interpolateWarm(1 - (b + 1) / maxBricks);
         }
-        context.fillRect(x, options.waveBottom - (brickHeight * (b+1)) - brickGap * b, barWidth, brickHeight);
+        if(index == maxBricks){
+          context.fillStyle = "#CC2828";
+        }
+          context.fillRect(x, options.waveBottom - (brickHeight * (b+1)) - brickGap * b, barWidth, brickHeight);
+        
       });
 
     });
