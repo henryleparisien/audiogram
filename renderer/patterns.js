@@ -150,7 +150,7 @@ function bricks(rainbow) {
           context.fillStyle = "#C8E6F5";
           context.fillRect(x, j, barWidth, brickHeight);
         }
-       
+        context.fillStyle = options.waveColor;
         if(index == d3.range(bricks).length-1 && index !=0){
           context.fillStyle = "#CC2828";
         }
