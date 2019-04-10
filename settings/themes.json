@@ -9,7 +9,7 @@
     "waveTop": 150,
     "waveBottom": 420,
     "captionTop": 470,
-    "captionFont": "300 52px 'Source Sans Pro'",
+    "captionFont": "300 52px 'GraphikCondensed-Bold'",
     "captionLineHeight": 52,
     "captionLineSpacing": 7,
     "captionLeft": 200,
@@ -36,7 +36,7 @@
     "captionLeft": 640,
     "waveBottom": 660,
     "waveTop": 320,
-    "pattern": "bricks"
+    "pattern": "wave"
   }, 
    "Le parisien podcast": {
     "width": 720,
@@ -50,6 +50,6 @@
     "captionLeft": 340,
     "waveTop": 450,
     "waveBottom": 720,
-    "pattern": "bricks"
+    "pattern": "wave"
   }
 }
