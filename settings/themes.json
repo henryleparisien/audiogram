@@ -9,7 +9,7 @@
     "waveTop": 150,
     "waveBottom": 420,
     "captionTop": 470,
-    "captionFont": "300 52px 'GraphikCondensed-Bold'",
+    "captionFont": "300 52px 'GraphikCondensed-Bold.ttf'",
     "captionLineHeight": 52,
     "captionLineSpacing": 7,
     "captionLeft": 200,
