@@ -10,14 +10,14 @@ function getWaveform(filename, options, cb) {
       samples = [];
 
   stream.on("data",function(sample, channel){
-    console.log(sample);
+    
     // Average multiple channels
     if (channel > 0) {
       samples[samples.length - 1] = ((samples[samples.length - 1] * channel) + sample) / (channel + 1);
     } else {
       samples.push(sample);
     }
-
+    console.log(sample.length);
   });
 
   stream.on("error", cb);
