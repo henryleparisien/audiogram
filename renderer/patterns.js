@@ -14,7 +14,7 @@ module.exports = {
 function filledPath(interpolator) {
 
   return function drawCurve(context, data, options) {
-
+    console.log(JSON.strongify(data));
     context.fillStyle = options.waveColor;
     context.strokeStyle = options.waveColor;
     context.lineWidth = 3;
