@@ -18,7 +18,7 @@ function getWaveform(filename, options, cb) {
       } else {
         samples.push(sample);
       }
-      console.log(samples.length);
+      //console.log(samples.length);
     }
   });
 
